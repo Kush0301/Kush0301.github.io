@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Implementation of basic reinforcement learning algorithms.">
+  <meta name="description" content="Obstacle Avoidance for UAV.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://kush0301.github.io/project/rl/">
+  <link rel="alternate" hreflang="en-us" href="https://kush0301.github.io/project/obstacleavoidance/">
 
   
 
@@ -213,7 +213,7 @@
   <link rel="icon" type="image/png" href="/images/icon_huaa0169461caaa89fcaa624faa3b604eb_3383_32x32_fill_lanczos_center_3.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_huaa0169461caaa89fcaa624faa3b604eb_3383_192x192_fill_lanczos_center_3.png">
 
-  <link rel="canonical" href="https://kush0301.github.io/project/rl-implementation/">
+  <link rel="canonical" href="https://kush0301.github.io/project/obstacleavoidance/">
 
   
   
@@ -227,8 +227,8 @@
   
   <meta property="og:site_name" content="Roboticist">
   <meta property="og:url" content="https://kush0301.github.io/project/rl/">
-  <meta property="og:title" content="Implementation of RL Algorithms | Roboticist">
-  <meta property="og:description" content="Implementation of basic reinforcement learning algorithms."><meta property="og:image" content="https://kush0301.github.io/project/rl-implementation/featured.jpg">
+  <meta property="og:title" content="Obstacle Avoidance for UAV | Roboticist">
+  <meta property="og:description" content="Obstacle Avoidance for UAV."><meta property="og:image" content="https://kush0301.github.io/project/obstacleavoidance/featured.jpg">
   <meta property="twitter:image" content="https://kush0301.github.io/project/rl/featured.jpg"><meta property="og:locale" content="en-us">
   
     
@@ -258,12 +258,12 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://kush0301.github.io/project/rl-implementation/"
+    "@id": "https://kush0301.github.io/project/obstacleavoidance/"
   },
-  "headline": "Implementation of RL Algorithms",
+  "headline": "Obstacle Avoidance for UAV",
   
   "image": [
-    "https://kush0301.github.io/project/rl-implementation/featured.jpg"
+    "https://kush0301.github.io/project/obstacleavoidance/featured.jpg"
   ],
   
   "datePublished": "2019-06-01T00:00:00Z",
@@ -282,7 +282,7 @@
       "url": "img/https://kush0301.github.io/"
     }
   },
-  "description": "Implemented basic RL and Deep RL algorithms."
+  "description": "Obstacle Avoidance for UAV."
 }
 </script>
 
@@ -300,10 +300,9 @@
 
 
 
-  <title>Implementation of RL Algorithms | Roboticist</title>
+  <title>Obstacle Avoidance for UAV | Roboticist</title>
 
 </head>
-
 <body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
 
   <aside class="search-results" id="search">
@@ -592,7 +591,7 @@
     
       
     
-    Oct 6, 2022
+    Dec 1, 2022
   </span>
   
 
@@ -669,13 +668,11 @@
 </div>
 
 
-</div>
 
 
 <div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 541px; max-height: 244px;">
   <div style="position: relative">
-    <img src="/project/rl/" alt="" class="featured-image">
-    <!-- <span class="article-header-caption">Picture from Reinforcement Learning - An Introduction</span> -->
+    <img src="/project/obstacleavoidance/obstacle_avoidance.jpg" >
   </div>
 </div>
 
@@ -684,7 +681,14 @@
   <div class="article-container">
 
     <div class="article-style">
-    <p>Coming Soon!</p>
+    <h3>Description</h3>
+    <p>In this project, a ResNet-based architecture was trained with single instances of RGB images to predict traversable paths for a UAV. The images, obtained from the <a href="https://uzh-rpg.github.io/icra2022-dodgedrone/">DodgeDrone Simulation</a> environment, were labelled in self-supervised way by taking the maximum average depth of the patch as a criterion. The model was fed with positive examples of obstacle-free patches (in green). The idea of the project is to avoid obstacles during navigation by moving the UAV towards the center of the predicted patch (in red).</p>
+    <p>Ongoing and future works include the following:
+    <ul>
+    <li>Using the center of the patch to obtain linear velocity commands through Radial Flow.</li>
+    <li>Integrating the network with Habitat Simulation for end-to-end high-level control. </li>
+
+    </p>
     </div>
 
     
