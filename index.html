@@ -451,7 +451,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#researchexperience" data-target="#researchexperience"><span>Research Experience</span></a>
+          <a class="nav-link " href="/#workexperience" data-target="#workexperience"><span>Work Experience</span></a>
         </li>
 
         <li class="nav-item">
@@ -703,7 +703,7 @@
     
     <h1>Biography</h1>
     <p style="font-size: 15px;">I'm an MS Robotics Student at <a href="https://www.wpi.edu/academics/departments/robotics-engineering"> Worcester Polytechnic Institute</a>. I'm currently working at
-    the <a href="https://pear.wpi.edu/">PeAR Group</a href="https://nitinjsanket.github.io/"> with <a>Prof. Nitin Sanket</a> on developing perception-based autonomy algorithms
+    the <a href="https://pear.wpi.edu/">PeAR Group</a > with <a href="https://nitinjsanket.github.io/">Prof. Nitin Sanket</a> on developing perception-based autonomy algorithms
   for tiny aerial robotics. Specifically, I work on Scene Understanding, Active Perception and 3D Vision.</p>
     <p style="font-size: 15px;">As of May 2024, I am employed at <a href="https://smartapp.com/"> Smartapp.com</a> as a Robotics and 3D Reconstruction Engineer.
       I helped in the fabrication of a multi-camera setup for reconstructing digital twins of construction sites using 3D Gaussian Splatting (3DGS). I spearheaded the development of a reconstruction pipeline
@@ -1496,7 +1496,7 @@
   
 
   
-  <section id="researchexperience" class="home-section wg-experience   "  >
+  <section id="workexperience" class="home-section wg-experience   "  >
     <div class="container">
       
 
@@ -1504,15 +1504,130 @@
 
 <div class="row">
   <div class="col-12 col-lg-4 section-heading">
-    <h1>Research Experience</h1>
+    <h1>Work Experience</h1>
     
   </div>
   <div class="col-12 col-lg-8">
     
 
     
-    
-    
+    <div class="row experience"></div>
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col ">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">Robotics and 3D Reconstruction Engineer</h4>
+            <h4 class="card-title exp-company text-muted my-0"><a href="https://smartapp.com" target="_blank" rel="noopener">Smartapp.com</a></h4>
+            <div class="text-muted exp-meta">
+              May 2024 -
+              
+                Present
+              
+              
+                <span class="middot-divider"></span>
+                <span>Worcester, MA</span>
+              
+            </div>
+            <div class="card-text">
+            <ul>
+              <br>
+              <li><b>Construction Site Inspection</b> 
+              <ul>
+                <br>
+                <li>Developed a software stack for inspecting and monitoring construction site evolution using a camera-only setup to geometrically verify structures against floor plans.
+                </li> 
+                <li>Designed and fabricated a multi-camera setup capturing HDR images from multiple perspectives for high-fidelity, geometrically accurate 3D reconstructions; 
+                  created a custom 3DGS model initialized with a NeRF model trained on the same images, 
+                  incorporating depth and normal supervision; Decomposed the 3DGS model into semantically meaningful 
+                  groups for enhanced scene understanding</li>
+                <li>Implemented temporal updates to local areas in the 3DGS model by relocalizing new images and detecting changes 
+                  using a transformer-based network. The changed areas were locally updated in the 3DGS model without disturbing the unchanged parts.  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row experience"></div>
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col ">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">Graduate Researcher</h4>
+            <h4 class="card-title exp-company text-muted my-0"><a href="https://pear.wpi.edu" target="_blank" rel="noopener">PeAR Group, WPI</a></h4>
+            <div class="text-muted exp-meta">
+              Jan 2024 -
+              
+                Present
+              
+              
+                <span class="middot-divider"></span>
+                <span>Worcester, MA</span>
+              
+            </div>
+            <div class="card-text">
+            <ul>
+              <br>
+              <li><b>VizFlyt: Perception-centric Pedagogical Framework for Autonomous Aerial Robots </b> 
+              <ul>
+                <br>
+                <li>Developed VizFlyt, a pedagogical framework for university-level aerial robotics courses, similar to a virtual reality setup for drone autonomy software testing.
+                </li> 
+                <li>Hallucinated vision sensors via pose-dependent novel view synthesis using 3D Gaussian Splatting at 100 Hz; demonstrated effectiveness through tasks like Visual Odometry, high-speed obstacle avoidance, and navigation through known and unknown gaps in real-world experiments.
+                </li>
+              </ul></li>
+              <br>
+              <li><b>Autonomous Wire Inspection (RTX Corporation)</b> 
+              <ul>
+                <br>
+                <li>Created a UAV-based real-time wire inspection system to quantify wire thickness, inspect connections in electric boxes, and assess wire integrity.
+                </li> 
+                <li>Developed a real-time tracking and segmentation pipeline for image-based visual servoing; engineered a post-processing pipeline using segmentation masks to decompose 3D Gaussian Splatting (3DGS) models into semantically meaningful groups; used localization data to scale the 3DGS model for accurate wire thickness measurement.
+                </li>
+              </ul></li>
+              <br>
+              <li><b>Object Detection in Adverse Weather Conditions</b> 
+                <ul>
+                  <br>
+                  <li>Enhanced object detection in adverse weather using a conditional transformer-based architecture.</li> 
+                  <li>Computed an offline memory bank of rich object feature embeddings from a powerful vision encoder (SAM) on clear images; utilized this memory bank to regularize and improve adverse feature embeddings through self- and cross-attention mechanisms.</li>
+                <li>Achieved a 4.423 increase in mAP after integrating the model with Faster R-CNN on the BDD100K validation set; a first-author paper is under preparation.
+                </li>
+                </ul></li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="row experience">
       
       <div class="col-auto text-center flex-column d-none d-sm-flex">
@@ -1815,77 +1930,6 @@
         </div>
         </section>
 
-
-  <section id="contact" class="home-section wg-contact"  >
-    <div class="container">
-      
-
-
-
-
-
-<div class="row contact-widget">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Contact</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-    
-
-    
-
-    
-    
-      
-      
-    
-
-    <div class="mb-3">
-      <form name="contact" method="POST" action="https://formspree.io/f/mlevnpzv">
-        <div class="form-group form-inline">
-          <label class="sr-only" for="inputName">Name</label>
-          <input type="text" name="name" class="form-control w-100" id="inputName" placeholder="Name" required>
-        </div>
-        <div class="form-group form-inline">
-          <label class="sr-only" for="inputEmail">Email</label>
-          <input type="email" name="email" class="form-control w-100" id="inputEmail" placeholder="Email" required>
-        </div>
-        <div class="form-group">
-          <label class="sr-only" for="inputMessage">Message</label>
-          <textarea name="message" class="form-control" id="inputMessage" rows="5" placeholder="Message" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-outline-primary px-3 py-2">Send</button>
-      </form>
-    </div>
-    
-
-    <ul class="fa-ul">
-
-      
-
-      
-
-      
-      
-
-      
-
-      
-
-      
-
-      
-      
-
-    </ul>
-
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
 
 
 
